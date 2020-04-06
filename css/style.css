@@ -1,0 +1,204 @@
+* {
+	box-sizing: border-box;
+}
+/* Base Element Styles */
+
+body{
+    background-color: bisque;
+}
+h1,
+h2,
+h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2,
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+p {
+    font-family: 'Bellota Text', cursive;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+img {
+    width: 100%;
+    padding: 15px;
+}
+
+/* Base Layout Styles */
+
+.main-header {
+    margin-top: 20px;
+}
+
+.main {
+    margin-bottom: 40px;
+}
+.name {
+    text-align: center;
+    font-size: 30px;
+}
+
+.main-nav {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main-nav a {
+    text-decoration: none;
+    display: block;
+}
+
+nav li {
+    font-size: 15px;
+    list-style-type: none;
+    background-color: whitesmoke;
+    padding: 10px;
+    margin: 10px;
+}
+
+.primary-col {
+    margin: 0 10px 0 10px;
+}
+
+.skills {
+    text-align: center;
+}
+
+.skills-list li {
+    list-style-type: square;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.contact-list {
+    text-align: center;
+}
+
+.contact-list a{
+    text-decoration: none;
+    color: black;
+}
+
+.contact-list li{
+    padding: 20px;
+}
+
+.footer-nav {
+    display: none;
+}
+
+.footer-name {
+    float: left;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.footer-nav2 {
+    float: right;
+    font-size: 15px;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+.footer-nav2 a {
+    text-decoration: none;
+    color: black;
+}
+
+.tertiary-col {
+    display: block;
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ---- Pseudo Selectors ----*/
+
+a:hover {
+    color: lawngreen;
+}
+
+/* ---- Media Queries ---- */
+ @media (min-width: 768px){
+    .main-nav li {
+		display: inline-block;
+        margin-left: 15px;
+        background-color: bisque;
+    }
+    
+    .main-image {
+        float: right;
+        width: 44%
+    }
+
+    .main-con {
+        float: left;
+        width: 55%;
+    }
+
+    .left{
+        float: left;
+        width: 49%;
+    }
+
+   .right{
+       float: right;
+       width: 49%;
+   }
+
+   .footer-nav2{
+       display: none;
+   }
+   .footer-nav{
+        display: inherit;
+       float: right;
+   }
+
+   .footer-nav li{
+       display: inline-block;
+       margin: 20px;
+   }
+
+ }
+
+ @media (min-width: 1024px){
+
+     .name {
+         float: left;
+         margin-left: 40px;
+     }
+
+     .main-nav {
+         float: right;
+         margin-right: 40px;
+     }
+
+     .top {
+         display: inline-block;
+         width: 33%;
+     }
+
+     .bottom {
+        display: inline-block;
+        width: 33%;
+    }
+
+
+ }
+
+
+/* ---- Float clearfix ---- */
+.clearfix:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+    
